@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   
+    <title>Trabajador</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <nav>
+		<ul class="menu-horizontal">
+			<li><a href="2.html">Inicio</a></li>
+			<li>
+				<a href="trabajador.html">trabajador</a>
+				<ul class="menu-vertical">
+					<li><a href="#">reparaciones</a></li>
+					<li><a href="#">actualizar num.celular</a></li>
+					
+				</ul>
+			</li>
+			<li>
+				<a href="cliente.html">cliente</a>
+				<ul class="menu-vertical">
+					<li><a href="#">actualizar num.celular</a></li>
+					<li><a href="#"></a></li>
+				</ul>
+			</li>
+			<li><a href="consulta.html">generar una consulta</a></li>
+
+		</ul>
+	</nav>
+    <style>
+        form{
+            padding: auto;
+            margin: 0 auto;
+            width: 300px;
+            color:rgb(3, 141, 14);
+
+        }
+    </style>
+    
+	<section id="html">
+		<h2>FAVOR DE REGISTRAR UN TRABAJADOR</h2>
+		<p>Buen dia..<br>Favor de realizar el llenado del siguiente formulario</p>
+
+	</section>
+    <br>
+    
+    <h3>trabajador</h3>
+        
+    <div>
+        <label for="apodo">Nombre<br></label>
+        <input type="text" name="apodo" id="apodo">
+    </div>
+    <div>
+        <label for="lastname">Apellidos<br></label>
+        <input type="text" name="lastname" id="lastname">
+        
+    </div>
+    <div>
+        <label for="tiempo">Horario<br></label>
+        <input type="text" name="tiempo" id="tiempo">
+        
+    </div>
+    <div>
+        <label for="arreglado">Reparacion Realizada</label>
+        <input type="text" name="arreglado" id="arreglado">
+        
+    </div>
+    <div>
+        <label for="habilidad">Experiencia laboral</label>
+        <input type="text" name="habilidad" id="habilidad">
+        
+    </div>
+    <div>
+        <label for="formacion">Estudios<br></label>
+        <input type="text" name="formacion" id="formacion">
+        
+    </div>
+    <button class="btn btn-primary" onclick="creartrabajador()">Guardar</button>
+    
+ <script src="Persona.js"></script>
+ <script src="Trabajador.js"></script>
+ <script src="Cliente.js"></script>
+ <script src="Consulta.js"></script>
+ <script src="Main.js"></script>
+</body>

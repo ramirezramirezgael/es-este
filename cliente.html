@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ 
+    <title>cliente</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <nav>
+		<ul class="menu-horizontal">
+			<li><a href="2.html">Inicio</a></li>
+			<li>
+				<a href="trabajador.html" class="selected">trabajador</a>
+				<ul class="menu-vertical">
+					<li><a href="#">reparaciones</a></li>
+					<li><a href="#">actualizar num.celular</a></li>
+					
+				</ul>
+			</li>
+			<li>
+				<a href="cliente.html">cliente</a>
+				<ul class="menu-vertical">
+					<li><a href="#">actualizar num.celular</a></li>
+					<li><a href="#"></a></li>
+				</ul>
+			</li>
+			<li><a href="consulta.html">generar una consulta</a></li>
+
+		</ul>
+	</nav>
+
+	<section id="html">
+		<h2>ESTIMADO CLIENTE FAVOR DE REGISTRAR SUS DATOS...</h2>
+		<p>Buen dia..<br>Favor de realizar el llenado del siguiente formulario</p>
+
+	</section>
+    <br>
+    <h3>cliente</h3>
+    <div>
+        <label for="name">Nombre</label>
+        <input type="text" name="name" id="name">
+    </div>
+    <div>
+        <label for="lastname">Apellidos</label>
+        <input type="text" name="apellido" id="apellido">
+    </div>
+    <div>
+        <label for="contacto">Numero Telefonico</label>
+        <input type="text" name="contacto" id="contacto">
+    </div>
+    <div>
+        <label for="cita">Numero de Nota</label>
+        <input type="text" name="cita" id="cita">
+    </div>
+    <div>
+        <label for="lapso">Tiempo de espera</label>
+        <input type="text" name="lapso" id="lapso">
+    </div>
+    <div>
+        <label for="emergencia">Contacto de emergencia</label>
+        <input type="text" name="emergencia" id="emergencia">
+    </div>
+    <button onclick="crearCliente()">crear</button>
+    <script src="Persona.js"></script>
+    <script src="Trabajador.js"></script>
+    <script src="Cliente.js"></script>
+    <script src="Consulta.js"></script>
+    <script src="Main.js"></script>
+
+</body>

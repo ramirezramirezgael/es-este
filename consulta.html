@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>consulta</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <nav>
+		<ul class="menu-horizontal">
+			<li><a href="2.html">Inicio</a></li>
+			<li>
+				<a href="trabajador.html" class="selected">trabajador</a>
+				<ul class="menu-vertical">
+					<li><a href="#">reparaciones</a></li>
+					<li><a href="#">actualizar num.celular</a></li>
+					
+				</ul>
+			</li>
+			<li>
+				<a href="cliente.html">cliente</a>
+				<ul class="menu-vertical">
+					<li><a href="#">actualizar num.celular</a></li>
+					<li><a href="#"></a></li>
+				</ul>
+			</li>
+			<li><a href="consulta.html">generar una consulta</a></li>
+
+		</ul>
+	</nav>
+
+	<section id="html">
+		<h2>ESTIMADO CLIENTE FAVOR DE LLENAR LOS CAMPOS SOLICITADOS...</h2>
+		<p>Buen dia..<br>Favor de realizar el llenado del siguiente formulario</p>
+
+	</section>
+    <br>
+<h3>consulta</h3>
+    <div>
+        <label for="causa">motivo</label>
+        <input type="text" name="causa" id="causa">
+    </div>
+    <div>
+        <label for="hora_ingreso">hora entrada</label>
+        <input type="text" name="hora_ingreso" id="hora_ingreso">
+    </div>
+    <div>
+        <label for="tipo">Modelo del equipo</label>
+        <input type="text" name="tipo" id="tipo">
+        
+    </div>
+    <div>
+        <label for="date">Fecha</label>
+        <input type="text" name="date" id="date">
+        
+    </div>
+    <div>
+        <label for="anotacion">Comentarios</label>
+        <input type="text" name="anotacion" id="anotacion">
+        
+    </div>
+    <button onclick="GenerarConsulta()">Generar Consulta</button>
+    <script src="Persona.js"></script>
+    <script src="Trabajador.js"></script>
+    <script src="Cliente.js"></script>
+    <script src="Consulta.js"></script>
+    <script src="Main.js"></script>
+
+</body>
